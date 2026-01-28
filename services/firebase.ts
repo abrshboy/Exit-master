@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBF5rCH4x_KSlqohfJ4a8Y79nbYSvZdMLE",
-  authDomain: "exam-prep-app-a10a0.firebaseapp.com",
-  projectId: "exam-prep-app-a10a0",
-  storageBucket: "exam-prep-app-a10a0.firebasestorage.app",
-  messagingSenderId: "657453893320",
-  appId: "1:657453893320:web:d4dcd50c4a88c0c9f147fd",
-  measurementId: "G-S1XPDSX5RE"
+  apiKey: "AIzaSyC2oJCWF1f5PGmkfH0bJPRczHeCGvXXQLY",
+  authDomain: "exit-413c8.firebaseapp.com",
+  projectId: "exit-413c8",
+  storageBucket: "exit-413c8.firebasestorage.app",
+  messagingSenderId: "773387303945",
+  appId: "1:773387303945:web:5090ef7e38bd0e91600cd8",
+  measurementId: "G-NBFKDLNGFQ"
 };
 
 const app = initializeApp(firebaseConfig);
