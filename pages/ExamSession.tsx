@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
-import { ExamBatch, ExamState } from '../types';
-import { Button, Card, Badge } from '../components/UI';
-import { ExamSidebar } from '../components/ExamSidebar';
+import { ExamBatch, ExamState } from '../types.ts';
+import { Button, Card, Badge } from '../components/UI.tsx';
+import { ExamSidebar } from '../components/ExamSidebar.tsx';
 import { Timer, Flag, ChevronLeft, ChevronRight, Send, AlertTriangle, CheckCircle, XCircle, GraduationCap } from 'lucide-react';
 
 interface ExamSessionProps {

@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
-import { Course, Question, User } from '../types';
-import { db } from '../services/firebase';
+import { Course, Question, User } from '../types.ts';
+import { db } from '../services/firebase.ts';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { Button, Card } from '../components/UI';
+import { Button, Card } from '../components/UI.tsx';
 import { Timer, ArrowRight, CheckCircle, XCircle, ChevronLeft, Info, Loader2 } from 'lucide-react';
 
 interface PracticeSessionProps {

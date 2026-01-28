@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
-import { Card, Button, Badge } from '../components/UI';
-import { db } from '../services/firebase';
+import { Card, Button, Badge } from '../components/UI.tsx';
+import { db } from '../services/firebase.ts';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { 
   ArrowLeft, 
@@ -15,7 +14,7 @@ import {
   ClipboardList,
   Loader2
 } from 'lucide-react';
-import { Question } from '../types';
+import { Question } from '../types.ts';
 
 interface AdminDashboardProps {
   onExit: () => void;
