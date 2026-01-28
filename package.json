@@ -1,5 +1,5 @@
 {
-  "name": "eduquest-ai---advanced-learning-platform",
+  "name": "exit-prep---professional-learning-platform",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,8 +12,8 @@
     "lucide-react": "^0.563.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "@google/genai": "^1.38.0",
-    "firebase": "^12.8.0"
+    "firebase": "^12.8.0",
+    "@google/genai": "^1.38.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
