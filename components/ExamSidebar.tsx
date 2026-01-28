@@ -19,7 +19,7 @@ export const ExamSidebar: React.FC<ExamSidebarProps> = ({
 }) => {
   return (
     <div className="flex flex-col h-full">
-      <h3 className="text-lg font-semibold mb-4 text-gray-800">Exam Map</h3>
+      <h3 className="text-lg font-black mb-4 text-gray-800 uppercase tracking-tighter">Session Map</h3>
       <div className="grid grid-cols-5 gap-2 overflow-y-auto pr-2 max-h-[calc(100vh-300px)]">
         {questions.map((q, idx) => {
           const isAnswered = answers[q.id] !== undefined && answers[q.id] !== null;
@@ -30,7 +30,7 @@ export const ExamSidebar: React.FC<ExamSidebarProps> = ({
           let textColor = "text-gray-600";
 
           if (isCurrent) {
-            bgColor = "bg-indigo-600 border-indigo-600";
+            bgColor = "bg-teal-600 border-teal-600";
             textColor = "text-white";
           } else if (isFlagged) {
             bgColor = "bg-amber-100 border-amber-400";
@@ -44,7 +44,7 @@ export const ExamSidebar: React.FC<ExamSidebarProps> = ({
             <button
               key={q.id}
               onClick={() => onNavigate(idx)}
-              className={`w-10 h-10 rounded flex items-center justify-center text-sm font-medium border transition-colors ${bgColor} ${textColor} hover:brightness-95`}
+              className={`w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold border transition-all ${bgColor} ${textColor} hover:brightness-95 active:scale-90`}
             >
               {idx + 1}
             </button>
@@ -53,21 +53,21 @@ export const ExamSidebar: React.FC<ExamSidebarProps> = ({
       </div>
       
       <div className="mt-8 space-y-3 pt-6 border-t border-gray-100">
-        <div className="flex items-center gap-2 text-sm text-gray-600">
-          <div className="w-4 h-4 rounded bg-emerald-100 border border-emerald-400" />
-          <span>Answered</span>
+        <div className="flex items-center gap-3 text-xs font-bold text-gray-500 uppercase tracking-widest">
+          <div className="w-3 h-3 rounded bg-emerald-100 border border-emerald-400" />
+          <span>Completed</span>
         </div>
-        <div className="flex items-center gap-2 text-sm text-gray-600">
-          <div className="w-4 h-4 rounded bg-amber-100 border border-amber-400" />
+        <div className="flex items-center gap-3 text-xs font-bold text-gray-500 uppercase tracking-widest">
+          <div className="w-3 h-3 rounded bg-amber-100 border border-amber-400" />
           <span>Flagged</span>
         </div>
-        <div className="flex items-center gap-2 text-sm text-gray-600">
-          <div className="w-4 h-4 rounded bg-white border border-gray-200" />
-          <span>Not Visited</span>
+        <div className="flex items-center gap-3 text-xs font-bold text-gray-500 uppercase tracking-widest">
+          <div className="w-3 h-3 rounded bg-white border border-gray-200" />
+          <span>Pending</span>
         </div>
-        <div className="flex items-center gap-2 text-sm text-gray-600">
-          <div className="w-4 h-4 rounded bg-indigo-600" />
-          <span>Current</span>
+        <div className="flex items-center gap-3 text-xs font-bold text-gray-500 uppercase tracking-widest">
+          <div className="w-3 h-3 rounded bg-teal-600" />
+          <span>Active</span>
         </div>
       </div>
     </div>
